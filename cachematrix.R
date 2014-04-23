@@ -10,9 +10,9 @@
 ## a numeric matrix and cache's its inverse.
 
 ## The first function, makeCacheMatrix creates a special "matrix", which is
-## a numeric vector and cache's its mean.
+## a numeric matrix and cache's its inverse.
 
-## The first function, makeCacheMatrix creates a special "vector", which is
+## The first function, makeCacheMatrix creates a special "matrix", which is
 ## really a list containing a function to:
 ## * set the value of the matrix
 ## * get the value of the matrix
@@ -28,8 +28,6 @@ makeCacheMatrix <- function(x = matrix()) {
   }
   get <- function() x
   setinverse <- function(solve) m <<- solve
-
-  setinverse <- function(mean) m <<- mean
   getinverse <- function() m
   list(set = set, get = get,
        setinverse = setinverse,
