@@ -7,9 +7,15 @@
 ## This assignment uses the <<- operator which can be used to assign a value to
 ## an object in an environment that is different from the current environment.
 ## Below are two functions that are used to create a special object that stores
+<<<<<<< HEAD
 ## a numeric matrix and cache's its inverse.
 
 ## The first function, makeCacheMatrix creates a special "matrix", which is
+=======
+## a numeric vector and cache's its mean.
+
+## The first function, makeCacheMatrix creates a special "vector", which is
+>>>>>>> 086ec50aae55b180b708564e65b03dafcbfc571d
 ## really a list containing a function to:
 ## * set the value of the matrix
 ## * get the value of the matrix
@@ -24,7 +30,11 @@ makeCacheMatrix <- function(x = matrix()) {
     m <<- NULL
   }
   get <- function() x
+<<<<<<< HEAD
   setinverse <- function(solve) m <<- solve
+=======
+  setinverse <- function(mean) m <<- mean
+>>>>>>> 086ec50aae55b180b708564e65b03dafcbfc571d
   getinverse <- function() m
   list(set = set, get = get,
        setinverse = setinverse,
