@@ -1,3 +1,5 @@
+## Peer assignment from the Coursera R Programming
+
 ## This is a two function combo that work together. The first one is used to
 ## create the input matrix with caching for the inverse solution.
 ## The second function is the inverse (solve) operation on the matrix within
@@ -7,9 +9,6 @@
 ## This assignment uses the <<- operator which can be used to assign a value to
 ## an object in an environment that is different from the current environment.
 ## Below are two functions that are used to create a special object that stores
-## a numeric matrix and cache's its inverse.
-
-## The first function, makeCacheMatrix creates a special "matrix", which is
 ## a numeric matrix and cache's its inverse.
 
 ## The first function, makeCacheMatrix creates a special "matrix", which is
